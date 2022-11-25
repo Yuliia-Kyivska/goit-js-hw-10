@@ -14,7 +14,17 @@ body {
 
 #search-box {
   font: inherit;
-  padding: 8px;
+  /* padding: 8px; */
   max-width: 320px;
   margin-bottom: 16px;
+}
+form{
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+#btn{
+background-color: blue;
+color: aliceblue;
+list-style: none;
 }
