@@ -15,15 +15,15 @@ function onSearch(evt) {
   evt.preventDefault();
   countryName = evt.target.value.trim();
   
-    if (data.length > 10) {
-           manyCountrys(data)
-    } else if(data.length <= 10 & data.length > 1) {
-      createCantryList(data)
-    } else if(data.length = 1) {
-      createCantryCard(data)
-    }
-  }
-   fetchCountries(countryName).then(data).catch(err => console.log(err));
+  //   if (data.length > 10) {
+  //          manyCountrys(data)
+  //   } else if(data.length <= 10 & data.length > 1) {
+  //     createCantryList(data)
+  //   } else if(data.length = 1) {
+  //     createCantryCard(data)
+  //   }
+  // }
+  //  fetchCountries(countryName).then(data).catch(err => console.log(err));
   
   
   function manyCountrys() {
