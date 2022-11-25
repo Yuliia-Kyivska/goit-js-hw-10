@@ -1,2 +1,0 @@
-!function(){var t="https://restcountries.com/v3.1/name/";!function(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"Ukraine";fetch("".concat(t).concat(n,"?fields=name.official,capital,population,flags,languages")).then((function(t){if(!t)throw new Error(t.statusTexr);return t.json()})).catch((function(t){return"Oops, there is no country with that name"}))}()}();
-//# sourceMappingURL=index.15237b53.js.map
