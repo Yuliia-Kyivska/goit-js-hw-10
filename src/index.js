@@ -17,9 +17,11 @@ countryInput.addEventListener(
 function onCountryInput() {
   const name = countryInput.value.trim();
   if (name === '') {
-    return (countryList.innerHTML = ''), (countryCard.innerHTML = '');
+    countryList.innerHTML = '';
+    countryCard.innerHTML = '';
+    return;
   }
-  
+
   fetchCountries(name)
     .then(countries => {
       countryList.innerHTML = '';
