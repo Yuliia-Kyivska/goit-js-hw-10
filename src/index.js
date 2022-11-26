@@ -19,6 +19,7 @@ function onCountryInput() {
   if (name === '') {
     return (countryList.innerHTML = ''), (countryCard.innerHTML = '');
   }
+  
   fetchCountries(name)
     .then(countries => {
       countryList.innerHTML = '';
@@ -57,6 +58,7 @@ function createCantryList(countries) {
     .join('');
   return markup;
 }
+
 function createCantryCard(countries) {
   const markup = countries
     .map(({ capital, population, languages }) => {
